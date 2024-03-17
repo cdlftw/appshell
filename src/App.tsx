@@ -7,7 +7,7 @@ function App() {
 
 	return (
 		<div className="flex h-screen overflow-hidden">
-			<div className={`bg-customgray h-full text-cusoffwhite border-r border-cusbuttonoutline transition-all duration-500 ease-in-out ${navVisible ? 'w-1/5' : 'w-0'}`}>
+			<div className={`bg-customgray h-full text-cusoffwhite border-r border-cusbuttonoutline transition-all duration-250 ease-in-out ${navVisible ? 'w-1/5' : 'w-0'}`}>
 				{navVisible && (
 					<nav>
 						Navigation
@@ -25,7 +25,7 @@ function App() {
 				</header>
 				Main Content
 			</main>
-			<div className={`bg-customgray h-full text-cusoffwhite border-l border-cusbuttonoutline transition-all duration-500 ease-in-out ${asideVisible ? 'w-1/5' : 'w-0'}`}>
+			<div className={`bg-customgray h-full text-cusoffwhite border-l border-cusbuttonoutline transition-all duration-250 ease-in-out ${asideVisible ? 'w-1/5' : 'w-0'}`}>
 				{asideVisible && (
 					<aside>
 						Properties Panel
