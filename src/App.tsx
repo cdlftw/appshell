@@ -7,7 +7,7 @@ function App() {
 
 	return (
 		<div className="flex h-screen overflow-hidden text-sm">
-			<div className={`bg-customgray h-full text-cusoffwhite border-r border-cusbuttonoutline transition-all duration-250 ease-in-out ${navVisible ? 'w-56' : 'w-0'}`}>
+			<div className={`bg-customgray h-full text-cusoffwhite border-r border-cusdialogbg transition-all duration-250 ease-in-out ${navVisible ? 'w-56' : 'w-0'}`}>
 				{navVisible && (
 					<nav>
 						Navigation
@@ -15,7 +15,7 @@ function App() {
 				)}
 			</div>
 			<main className="bg-customgray h-full text-cusoffwhite flex-grow">
-				<header className="bg-customgray text-cusoffwhite flex justify-between items-center border-b border-cusbuttonoutline">
+				<header className="bg-customgray text-cusoffwhite flex justify-between items-center border-b border-cusdialogbg">
 					<button onClick={() => setNavVisible(!navVisible)} className="p-2 hover:bg-cusdarkmenubg rounded-md">
 						{navVisible ? <BsLayoutSidebarInset className="w-4 h-4"/> : <BsLayoutSidebar className="w-4 h-4"/>}
 					</button>
@@ -25,7 +25,7 @@ function App() {
 				</header>
 				Main Content
 			</main>
-			<div className={`bg-customgray h-full text-cusoffwhite border-l border-cusbuttonoutline transition-all duration-250 ease-in-out ${asideVisible ? 'w-80' : 'w-0'}`}>
+			<div className={`bg-customgray h-full text-cusoffwhite border-l border-cusdialogbg transition-all duration-250 ease-in-out ${asideVisible ? 'w-80' : 'w-0'}`}>
 				{asideVisible && (
 					<aside>
 						Properties Panel
