@@ -19,6 +19,7 @@ function App() {
 					<button onClick={() => setNavVisible(!navVisible)} className="p-2 hover:bg-cusdarkmenubg rounded-md">
 						{navVisible ? <BsLayoutSidebarInset className="w-4 h-4"/> : <BsLayoutSidebar className="w-4 h-4"/>}
 					</button>
+					<h1 className="font-heading text-xl md:text-xl">header</h1>
 					<button onClick={() => setAsideVisible(!asideVisible)} className="p-2 hover:bg-cusdarkmenubg rounded-md">
 						{asideVisible ? <BsLayoutSidebarInsetReverse className="w-4 h-4"/> : <BsLayoutSidebarReverse className="w-4 h-4"/>}
 					</button>
